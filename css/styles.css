@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: #404bbf;
 }
 
-.first::after {
+.first:hover::after {
     content: "_";
     width: 100%;
     position: absolute;
