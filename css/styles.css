@@ -66,12 +66,23 @@ h1, h2, h3, h4, h5, h6, p {
     gap: 40px;
 }
 
-.first {
-    position: relative;
-    color: #404bbf;
+.page-header-links {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    padding: 24px 0;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.first:hover::after {
+.first {
+    position: relative;
+    color: #404BBF;
+}
+
+.first::after {
     content: "_";
     width: 100%;
     position: absolute;
@@ -81,18 +92,6 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #404bbf;
     border-radius: 2px;
 }
-
-.page-header-links {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    padding: 24px 0;
-    display: block;
-}
-
-
 
 .page-header-links:hover, .page-header-links:focus {
     color: #404bbf
@@ -115,6 +114,7 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 0.02em;
     color: #434455;
     display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-contacts-links:hover, .page-contacts-links:focus {
@@ -286,6 +286,7 @@ h1, h2, h3, h4, h5, h6, p {
 .employee-items {
     width: 40px;
     height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .employee-links {
@@ -302,6 +303,10 @@ h1, h2, h3, h4, h5, h6, p {
 .employee-links:focus,
 .employee-links:active {
     background-color: #404bbf;
+}
+
+.employee-svg {
+    fill: #f4f4fd;
 }
 
 .page-descriptions {
@@ -457,6 +462,10 @@ h1, h2, h3, h4, h5, h6, p {
     align-items: center;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-svg {
+    fill: #f4f4fd;
 }
 
 .footer-links:hover, .footer-links:focus {
